@@ -1,0 +1,82 @@
+RETINOPATHY IMAGE CLASSIFICATION
+FINAL MODEL TRAINING AND EVALUATION REPORT
+============================================================
+Generated: 2026-10-03 10:59:42
+
+1. DATASET
+------------------------------------------------------------
+Total images: 1764
+Training images: 1234
+Validation images: 265
+Test images: 265
+Number of classes: 3
+
+Original class distribution:
+  Class 1: 811
+  Class 2: 569
+  Class 3: 384
+
+2. MODEL
+------------------------------------------------------------
+Architecture: ResNet-50
+Pretrained weights: ImageNet
+Input size: 224 x 224
+Number of output classes: 3
+Optimizer: AdamW
+Loss: Weighted CrossEntropyLoss
+Data augmentation: Enabled for training
+
+3. TRAINING
+------------------------------------------------------------
+Maximum epochs: 25
+Actual epochs completed: 14
+Batch size: 32
+Best validation Macro-F1: 0.8773
+
+4. TEST RESULTS
+------------------------------------------------------------
+Accuracy:          0.8868
+Macro Precision:   0.8605
+Macro Recall:      0.8564
+Macro F1-score:    0.8582
+
+5. CONFUSION MATRIX
+------------------------------------------------------------
+Rows = Actual class
+Columns = Predicted class
+
+[[120   2   0]
+ [  1  73  12]
+ [  1  14  42]]
+
+6. PER-CLASS RESULTS
+------------------------------------------------------------
+Class 1:
+  Precision: 0.9836
+  Recall:    0.9836
+  F1-score:  0.9836
+  Support:   122
+
+Class 2:
+  Precision: 0.8202
+  Recall:    0.8488
+  F1-score:  0.8343
+  Support:   86
+
+Class 3:
+  Precision: 0.7778
+  Recall:    0.7368
+  F1-score:  0.7568
+  Support:   57
+
+7. SAVED FILES
+------------------------------------------------------------
+Model: /content/training_outputs/retinopathy_resnet50_final.pth
+Training history: /content/training_outputs/training_history.csv
+Confusion matrix: /content/training_outputs/confusion_matrix.png
+Final results: /content/training_outputs/final_test_results.csv
+Per-class results: /content/training_outputs/per_class_results.csv
+
+8. NOTE
+------------------------------------------------------------
+This model is intended for research/educational machine-learning purposes. Predictions should not be treated as a standalone medical diagnosis.

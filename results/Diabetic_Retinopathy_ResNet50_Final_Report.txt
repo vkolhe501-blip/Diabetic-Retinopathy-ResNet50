@@ -1,0 +1,132 @@
+
+============================================================
+DIABETIC RETINOPATHY DETECTION USING RESNET-50
+FINAL PROJECT REPORT
+============================================================
+
+1. PROJECT TITLE
+------------------------------------------------------------
+Diabetic Retinopathy Detection Using Deep Learning
+with ResNet-50
+
+
+2. OBJECTIVE
+------------------------------------------------------------
+The objective of this project is to develop a deep learning
+model capable of classifying retinal fundus images into
+three diabetic-retinopathy severity categories.
+
+
+3. MODEL
+------------------------------------------------------------
+Architecture:
+ResNet-50
+
+The model uses transfer-learning architecture with a
+modified fully connected classification head.
+
+Number of output classes:
+3
+
+
+4. TRAINING
+------------------------------------------------------------
+The model was trained using retinal fundus images with
+training and validation datasets.
+
+Training performance was monitored using:
+- Training loss
+- Validation loss
+- Accuracy
+- Macro F1-score
+
+
+5. VALIDATION PERFORMANCE
+------------------------------------------------------------
+Best validation Macro F1:
+0.8628
+
+Final validation accuracy:
+87.55%
+
+
+6. TEST PERFORMANCE
+------------------------------------------------------------
+The final model was evaluated using a held-out test set.
+
+The test confusion matrix was:
+
+              Predicted
+              Class 0   Class 1   Class 2
+
+Actual 0        121        1         0
+Actual 1          2       78         6
+Actual 2          0       20        37
+
+
+7. MODEL INTERPRETABILITY
+------------------------------------------------------------
+Grad-CAM was implemented to visualize image regions that
+contributed to the model's predictions.
+
+Grad-CAM visualizations are intended to provide insight
+into model behavior and should not be interpreted as
+clinical evidence of disease location.
+
+
+8. PREDICTION INTERFACE
+------------------------------------------------------------
+A Gradio-based demonstration interface was created.
+
+The interface allows a user to:
+- Upload a retinal fundus image
+- Obtain the predicted class
+- View prediction confidence
+- View class probabilities
+- View a Grad-CAM visualization
+
+
+9. OUTPUTS GENERATED
+------------------------------------------------------------
+The project includes:
+
+- Trained ResNet-50 model
+- Training history
+- Validation metrics
+- Test metrics
+- Classification report
+- Confusion matrix
+- Training/validation graphs
+- Multiple-image prediction results
+- Grad-CAM visualization
+- Gradio prediction interface
+
+
+10. LIMITATIONS
+------------------------------------------------------------
+This project is a machine-learning research and demonstration
+system. It is not a clinically validated diagnostic device.
+
+Model performance depends on the dataset, image quality,
+preprocessing, class distribution, and training procedure.
+
+Predictions should not be used as a substitute for assessment
+by a qualified medical professional.
+
+
+11. CONCLUSION
+------------------------------------------------------------
+A ResNet-50 based deep-learning system was developed for
+three-class diabetic-retinopathy classification.
+
+The model achieved strong validation performance, with a
+best validation Macro F1-score of 0.8628 and final validation
+accuracy of 87.55%.
+
+The project also includes model interpretability through
+Grad-CAM and an interactive prediction interface.
+
+
+============================================================
+END OF REPORT
+============================================================

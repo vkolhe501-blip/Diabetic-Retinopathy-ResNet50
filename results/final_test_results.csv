@@ -1,0 +1,6 @@
+Metric,Score,Percentage
+Test Accuracy,0.8867924528301887,88.68
+Test Macro Precision,0.8605363514186503,86.05
+Test Macro Recall,0.8564286239808442,85.64
+Test Macro F1,0.8582163428065067,85.82
+Best Validation Macro F1,0.877290583097417,87.73
